@@ -1,7 +1,14 @@
 import React from 'react';
+import VisibleTodoList from '../containers/VisibleTodoList';
+import AddTodo from '../containers/AddTodo';
 
-function App() {
-  return <div className="App">hello</div>;
-}
+const App = () => {
+  return (
+    <div className="App">
+      <AddTodo />
+      <VisibleTodoList />
+    </div>
+  );
+};
 
 export default App;
