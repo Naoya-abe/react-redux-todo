@@ -4,7 +4,7 @@ import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 
 import App from './components/App';
-import {addTodo} from './actions';
+import {addTodo, toggleTodo} from './actions';
 import * as serviceWorker from './serviceWorker';
 import reducers from './reducers';
 
