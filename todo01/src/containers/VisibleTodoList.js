@@ -7,7 +7,7 @@ const mapStateToPorops = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onTodoClick: id => {
+    toggleTodo: id => {
       dispatch(toggleTodo(id));
     },
   };
