@@ -4,11 +4,15 @@ import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 
 import App from './components/App';
-import {addTodo, toggleTodo} from './actions';
+import {addTodo, toggleTodo, setVisibilityFilter} from './actions';
 import * as serviceWorker from './serviceWorker';
 import reducers from './reducers';
 
 let store = createStore(reducers);
+
+console.log(store.getState());
+store.dispatch(setVisibilityFilter('SHOW_COMPLETED'));
+console.log(store.getState());
 
 ReactDOM.render(
   <Provider store={store}>
